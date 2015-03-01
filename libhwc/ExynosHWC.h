@@ -280,11 +280,11 @@ struct exynos5_hwc_composer_device_1_t {
 #ifdef HWC_SERVICES
 
 #define S3D_ERROR -1
-#define HDMI_TIMINGS_DEFAULT V4L2_DV_1080P60
-#define HDMI_TIMINGS_ERROR -1
+#define HDMI_PRESET_DEFAULT V4L2_DV_1080P60
+#define HDMI_PRESET_ERROR -1
 
-    int mHdmiDVTimings;
-    int mHdmiCurrentDVTimings;
+    int mHdmiPreset;
+    int mHdmiCurrentPreset;
     bool mHdmiResolutionChanged;
     bool mHdmiResolutionHandled;
 #if defined(S3D_SUPPORT)
